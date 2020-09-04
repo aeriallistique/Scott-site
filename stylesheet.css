@@ -1,0 +1,867 @@
+*{margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  
+}
+
+body{background-image: url(shakermill.jpg);
+     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    background-attachment: fixed;
+    background-blend-mode:color;
+    background-color:rgba(155, 214, 213, .60);
+}
+/*========HEADER=============*/
+header{
+    height: auto;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: .5rem;
+    background-color: rgba(165, 196, 228, .75);
+    padding-bottom: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    
+    
+}
+
+/*===shaker mill img ON DISPLAY-NONE==*/
+
+.themill{display: none}
+.themill img{height: auto;
+         width: 70%;
+         margin-top: 1rem;
+         margin-bottom: 1rem;      
+}
+
+/*=============================*/
+
+.title{font-size: 4rem;
+    cursor: pointer;
+    position: relative;
+    order: 1;
+    margin:auto;
+    margin-left: -12rem;
+   color: antiquewhite;
+}
+
+.title::before{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    position: absolute;
+    top: 95%;
+}
+.title::after{content: '';
+     display: block;
+     width: 20px;
+     height: 20px;
+    border-radius: 50%;
+     background-color: black;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.flag{order: 0;
+      margin-right:auto;
+}
+.flag img{ width: 100%;
+     height:100%;
+    padding-left: 1rem;
+}
+
+/*========C O NT A C T SECTION*/
+.contact{
+    position: relative;
+    width: 40%;
+    height: 40vh;
+    padding-top: 4rem;
+    padding-bottom: 3rem;
+    padding-right: 3rem;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin: 7.3rem auto 3rem auto;
+    
+}
+
+.facebook-icon{
+    width: 100%;
+    height: auto;
+}
+
+.anchor-tag{
+    width: 60%;
+    height: auto;
+    display: block;
+    color: black;
+    margin: 0 auto;
+}
+.anchor-tag i{
+    line-height: 2rem;
+    padding: .5rem;
+    font-size: 2rem;
+    display: block; 
+    transition: scale .2s ease-out;
+}
+.anchor-tag:hover i{
+    color: antiquewhite;
+    transform: scale(1.3);
+}
+
+
+.contact h2{font-weight: 900;}
+.contact h3{ font-weight: bolder;}
+.email{ color:black;
+           font-weight: 900;
+}
+.email:hover{color: white;
+     letter-spacing: 2px;
+    text-shadow: 1px 0px 18px rgba(0, 0, 0, 1);
+}
+.contact p{font-weight: bolder;}
+
+
+/*-------vertical line---------*/
+.contact:before{
+    content: '';
+    display: block;
+    height: 90%;
+    width: 5px;
+/*    background-color: rgba(165, 196, 228, .95);*/
+    background-color: antiquewhite;
+    position:absolute;
+    left:0;
+    top: 10%;
+    margin: 0 0 0 -2rem;
+}
+
+/*-----contact before the vertical line*/
+.contact:after{
+    content:'Contact';
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: -45%;
+    letter-spacing: 3px;
+    color: antiquewhite;
+    
+}
+
+/*======= M A I N  section ==========*/
+.main { width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+.main:after{
+    content: '';
+    display: block;
+    width: 95%;
+    height: 5px;
+    background-color: antiquewhite;
+    position: absolute;
+    top: 105%;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+/*=======appraisals*/
+
+.card-appraisals{
+    height: 100%;
+    width:30%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    color:antiquewhite;
+    opacity:1;
+    transition: all .3s ease-in-out;
+    z-index: 9;
+    margin:.5rem;
+}
+.card-appraisals:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-image: url(appraisals%20copy%201.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity:.8;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.card-appraisals:hover.card-appraisals:before{
+    opacity:.5;
+}
+
+.card-appraisals:hover{
+ transform: scale(1.02);
+    -webkit-box-shadow: -15px 15px 28px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 15px 28px 1px rgba(0,0,0,0.75);
+box-shadow: -15px 15px 28px 1px rgba(0,0,0,0.75);
+}
+
+.card-appraisals a{
+    color: antiquewhite;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 60%;
+    height: 15%;
+    transition: all .3s ease-in-out;
+}
+
+.card-appraisals:hover.card-appraisals a{
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.card-appraisals p{
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding: .5rem;
+}
+
+/*----------estate sales*/
+
+.card-estate{
+    height: 100%;
+    width:30%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    color:antiquewhite;
+    opacity:1;
+    transition: all .3s ease-in-out;
+    z-index: 9;
+    margin:.5rem;
+}
+.card-estate:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-image: url(estate%20sale%20copy%201.jpg);
+    background-size: cover;
+    background-position: left;
+    background-color: rgba(0,  0, 0, 1);
+    opacity:.8;
+    z-index: -1;
+    transition: all .2s ease-in-out;
+}
+
+.card-estate:hover.card-estate:before{
+    opacity:.5;
+}
+
+.card-estate:hover{
+    transform: scale(1.02);
+    -webkit-box-shadow: -15px 15px 28px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 15px 28px 1px rgba(0,0,0,0.75);
+box-shadow: -15px 15px 28px 1px rgba(0,0,0,0.75);
+}
+
+.card-estate a{
+    color: antiquewhite;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 60%;
+    height: 15%;
+    transition: all .3s ease-in-out;
+    margin-top: -2.9rem
+}
+
+.card-estate:hover.card-estate a{
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+
+.card-estate p{
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding: .5rem;
+    margin-top: -2rem;
+}
+
+
+
+/*-------AUCTIONS*/
+
+
+.card-auctions{
+    height: 100%;
+    width:30%;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    color:antiquewhite;
+    opacity:1;
+    transition: all .3s ease-in-out;
+    z-index: 9;
+    margin:.5rem;
+    
+}
+.card-auctions:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom:0;
+    background-image: url(aution%20copy%201.jpg);
+    background-size: cover;
+    background-position: left;
+    opacity:.8;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+}
+
+.card-auctions:hover.card-auctions:before{
+    opacity:.4;
+
+
+}
+
+.card-auctions:hover{
+    transform: scale(1.02);
+    -webkit-box-shadow: -15px 15px 28px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: -15px 15px 28px 1px rgba(0,0,0,0.75);
+box-shadow: -15px 15px 28px 1px rgba(0,0,0,0.75);
+}
+
+.card-auctions a{
+    color: antiquewhite;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    width: 60%;
+    height: 15%;
+    transition: all .3s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.card-auctions:hover.card-auctions a{
+    font-size: 1.8rem;
+    text-decoration: underline;
+}
+
+.card-auctions p{
+    font-weight: 800;
+    font-size: 1.3rem;
+    padding: .5rem;
+    margin-bottom:3rem
+}
+
+/*---------SECTION SALES ----------*/
+
+.sales{
+    width: 100%;
+    height: 30vh;
+    margin: 0 auto 3rem auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.next-sale, .previous-sale{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.next-sale h2, .previous-sale h2{
+    width: 60%;
+    height: auto;
+    line-height:2.5rem;
+    font-size: 1.7rem;
+
+}
+
+.next-sale h2{
+    margin-top: -1rem;   
+}
+
+.next-sale a, .previous-sale a{
+    font-size: 1.3rem;
+    color: darkblue;
+    text-decoration: none;
+    display: block;
+    font-weight: bold;
+}
+
+.next-sale a{
+    line-height: 1.5;
+}
+
+.next-sale a:hover{
+    color: antiquewhite;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+    font-weight: bolder;
+}
+
+.previous-sale a:hover{
+     color: antiquewhite;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+    font-weight: bolder;
+}
+
+/*==--------TESTIMONIAL SECTION-----*/
+
+.testimonial{
+    width: 50%;
+    height: 10vh;
+    margin:1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+.testimonial h3{
+    font-size: 1.7rem;
+}
+.testimonial a{
+    display: block;
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: darkblue;
+}
+
+.testimonial a:hover{
+    color: antiquewhite;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+    font-weight: bolder;
+}
+
+/*=========F O R M  SECTION========*/
+
+.form{
+    width: 90%;
+    height: auto;
+    margin:2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+.form h2{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    letter-spacing: 2px;
+}
+.form input{
+    width: 50%;
+    height: 35px;
+    margin-bottom: .5rem;
+    outline-color: transparent;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid antiquewhite;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all .2s ease-in-out;
+    transform-origin: left;
+
+}
+.form input::placeholder{
+    color: antiquewhite;
+    font-size: 1rem
+}
+.form input:focus{
+    outline: none;
+    border-bottom: 4px solid darkblue;
+}
+.form input:focus.form input::placeholder{
+    color: darkblue;
+}
+
+.button-div{
+    width: 70%;
+    height:auto;
+    padding: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-div button{
+    width:150px;
+    height:35px;
+    cursor: pointer;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 1rem;
+    transition: all .1s ease-in;
+}
+.button-div button:hover{
+ background-color: darkblue;
+    color: antiquewhite;
+    border: none;
+    -webkit-box-shadow: -4px 4px 32px 3px rgba(0,0,0,0.75);
+-moz-box-shadow: -4px 4px 32px 3px rgba(0,0,0,0.75);
+box-shadow: -4px 4px 32px 3px rgba(0,0,0,0.75);
+}
+
+/*----------STONE HOUSE ----------*/
+
+.stone-house{
+    width: 50%;
+    height: 20vh;
+    margin: 2rem auto;
+    text-align: center;
+    padding-top: 2rem;
+    font-size: 1.5rem;  
+}
+
+.stone-house:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: antiquewhite;
+    margin-top: 1rem;
+    border: 1px solid gray;
+}
+.stone-house span{
+   font-size: 1.7rem;
+}
+.stone-house a{
+    color: darkblue;
+    text-decoration: none;
+}
+.stone-house a:hover{
+    color: antiquewhite;
+    text-decoration: underline;
+    text-decoration-color: antiquewhite;
+}
+
+
+/*=======FOOTER================*/
+footer{
+    width: 100vw;
+    height: auto;
+    margin: 3rem auto;
+    text-align: center;
+    position: relative;
+}
+
+.stopper{
+    width: 100%;
+    height: auto;
+    margin-bottom: 2rem;
+}
+.stopper h3{
+    font-size: 1.7rem;
+    margin-bottom: 1rem
+}
+
+.links{
+    width: 90%;
+    margin:0 auto 1rem auto;
+}
+.links a{
+    color: darkblue;
+    font-weight: bolder;
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 1.2rem
+}
+.links p{
+    font-weight: bolder;
+    font-size: 1.2rem
+}
+
+.copyright{
+    width: 100%;
+    height: auto;
+    background-color: lightslategray;
+    margin: 0 auto;
+    padding: 1.5rem;
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    color: antiquewhite;
+    letter-spacing: 2px;
+}
+
+
+/*==========MEDIA QUERIEEESSSS  EEWWWWW*/
+
+@media only screen and (max-width: 1180px){
+    
+
+    
+    .contact{
+        width: 50%;
+        
+    } 
+    
+    .contact:after{
+    content:'Contact';
+    top: 50%;
+    left: -40%;
+    font-size: 2rem;
+}  
+    
+   .next-sale h2, .previous-sale h2{
+    width: 100%;
+    height: 20%;
+    font-size: 1.5rem;
+}
+    
+    
+    
+    .form{
+        width: 100%;
+    }
+    
+}
+
+/*-----MEDIA QUERIES  940---------------*/
+
+@media only screen and (max-width: 940px){
+   header{
+    height: auto;
+    width: 100vw;
+    display: flex;
+        flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+    .title{
+    margin:auto;
+    font-size: 2.5rem;
+    }
+
+    .flag{order: 0;
+      margin:auto;
+}
+    
+    .contact:before, .contact:after{
+        display: none;
+    }
+    
+    .contact{
+        height: auto;
+        padding: 0;
+        padding-top: 1rem;
+        margin: 9rem auto 1rem auto;
+    }
+    
+    .card-appraisals, .card-estate,  .card-auctions{
+        height: 80%;
+        width:33%;
+    }
+     
+    .card-appraisals a{
+    letter-spacing:normal;
+    font-size: 1.2rem;
+}
+
+.card-appraisals:hover.card-appraisals a{
+    font-size: 1.4rem;
+}
+
+.card-appraisals p{
+    font-size: 1rem;
+}
+    
+/*    -----*/
+    .card-estate a{
+    letter-spacing:normal;
+    font-size: 1.2rem;
+}
+
+.card-estate:hover.card-estate a{
+    font-size: 1.4rem;
+}
+
+.card-estate p{
+    font-size: 1rem;
+}
+/*  -----  */
+        .card-auctions a{
+    letter-spacing:normal;
+    font-size: 1.2rem;
+}
+
+.card-auctions:hover.card-auctions a{
+    font-size: 1.4rem;
+}
+
+.card-auctions p{
+    font-size: 1rem;
+}
+    
+/*  --------SALES-------  */
+    
+.next-sale h2, .previous-sale h2{
+     font-size: 1.3rem;
+    }
+    
+    .previous-sale h2{
+      margin-top: -.5rem;
+      margin-bottom: 1rem;
+    }
+    
+    .next-sale a, .previous-sale a{
+    font-size: 1rem;
+    }
+    
+    .previous-sale a{
+    line-height: 1;
+}
+  
+/*  -----testimonial------  */
+    .testimonial h3{
+    font-size: 1.3rem;
+}
+    .testimonial{
+        margin-bottom: 4rem;
+    }
+    
+/*--------footer--------*/
+    
+    .links a, .links p{
+        font-size: 1rem;
+    }
+
+    
+}
+
+/*--------NEXT QUERIES  768-------*/
+
+@media only screen and (max-width: 768px){
+    
+    
+    .contact{
+        margin-top: 9rem;
+        height:auto;
+        font-size: 1.2rem;
+    }
+    
+
+    .main { 
+    width: 100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 4rem;
+    position: relative;
+}
+
+    .card-appraisals, .card-estate, .card-auctions{
+          width: 50%;
+    }
+    
+    .copyright{
+        font-size: .8rem;
+    }
+}
+
+/*-----NEXT QUERIES 500------*/
+
+@media only screen and (max-width: 500px){
+    .contact{
+        width: 80%;
+        line-height: 1.5rem;
+    }
+    
+    
+    .sales{
+    height: 35vh;
+    margin: 2rem auto 4rem auto;
+    flex-direction: column;
+}
+    
+  .button-div button{
+    width:100px;
+    font-size: 1rem;
+}
+    
+    .stone-house{
+    width: 70%;
+    margin: 2rem auto 1rem auto;
+    font-size: 1.3rem;  
+}
+   
+}
+
+
+/*-----NEXT QUERIES 375------*/
+
+@media only screen and (max-width: 375px){
+    .title{
+        font-size: 1.5rem;
+    }
+    
+    .card-appraisals, .card-estate, .card-auctions{
+        width: 80%;
+    }
+    
+    .form h2{
+        letter-spacing: 1px;
+  font-size:1.4rem; 
+    }
+    
+    .copyright{
+        font-size: .7rem;
+    }
+    
+    
+}
